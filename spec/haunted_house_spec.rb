@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'spec_helper'
 
 describe "HauntedHouse" do
@@ -6,6 +7,7 @@ describe "HauntedHouse" do
     asylum = HauntedHouse.create(
       name: "Asylum Haunted House"
     )
+    # binding.pry
     expect(HauntedHouse.find_by(name: "Asylum Haunted House")).to eq(asylum)
   end
 
